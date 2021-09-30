@@ -13,6 +13,7 @@
 		02F0215C270550D5002AF6F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F0215A270550D5002AF6F7 /* Main.storyboard */; };
 		02F0215E270550D6002AF6F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F0215D270550D6002AF6F7 /* Assets.xcassets */; };
 		02F02161270550D6002AF6F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F0215F270550D6002AF6F7 /* LaunchScreen.storyboard */; };
+		02F0216927055389002AF6F7 /* UtcTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0216827055389002AF6F7 /* UtcTimeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		02F0215D270550D6002AF6F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F02160270550D6002AF6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02F02162270550D6002AF6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F0216827055389002AF6F7 /* UtcTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtcTimeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				02F02154270550D5002AF6F7 /* AppDelegate.swift */,
 				02F02156270550D5002AF6F7 /* SceneDelegate.swift */,
-				02F02158270550D5002AF6F7 /* ViewController.swift */,
+				02F0216A27055738002AF6F7 /* Model */,
+				02F0216B27055741002AF6F7 /* View */,
+				02F0216C2705574A002AF6F7 /* Controller */,
 				02F0215A270550D5002AF6F7 /* Main.storyboard */,
 				02F0215D270550D6002AF6F7 /* Assets.xcassets */,
 				02F0215F270550D6002AF6F7 /* LaunchScreen.storyboard */,
 				02F02162270550D6002AF6F7 /* Info.plist */,
 			);
 			path = RxSwift_Tutorial;
+			sourceTree = "<group>";
+		};
+		02F0216A27055738002AF6F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02F0216827055389002AF6F7 /* UtcTimeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02F0216B27055741002AF6F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02F0216C2705574A002AF6F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02F02158270550D5002AF6F7 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F02159270550D5002AF6F7 /* ViewController.swift in Sources */,
+				02F0216927055389002AF6F7 /* UtcTimeModel.swift in Sources */,
 				02F02155270550D5002AF6F7 /* AppDelegate.swift in Sources */,
 				02F02157270550D5002AF6F7 /* SceneDelegate.swift in Sources */,
 			);
