@@ -6,20 +6,24 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
   @IBOutlet weak var datetimeLabel: UILabel!
   
   let viewModel = ViewModel()
+  let disposeBag = DisposeBag()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    viewModel.onUpdated = { [weak self] in
-      DispatchQueue.main.async {
-        self?.datetimeLabel.text = self?.viewModel.dateTimeString
-      }
-    }
+    
+    // String이 들어오면 datetimeLabel Text에 넣는다.
+    viewModel.dateTimeString
+      .bind(to: datetimeLabel.rx.text)
+      .disposed(by: disposeBag)
+
     viewModel.reload()
   }
   
